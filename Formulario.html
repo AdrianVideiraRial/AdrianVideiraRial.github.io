@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form action="http://paxinas.danielcastelao.org/action_page.php" method="GET" enctype="text/plain">
+            <label for="fdoc">NIF:</label>
+            <input type="text" id="fdoc" name="nif"><br>
+            <br>
+            <label for="lname">Nombre:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <br>
+            <label for="lname">Apellidos:</label>
+            <input type="text" id="lname" name="lname"><br>
+                                    
+            <p>Edad:</p>
+            <input type="radio" id="jov" name="edad" value="joven">
+            <label for="joven">15-19</label><br>
+            <input type="radio" id="adul" name="edad" value="adulto">
+            <label for="adulto">20-29</label><br>
+            <input type="radio" id="madu" name="edad" value="maduro">
+            <label for="maduro">30-40</label><br>                   
+
+            <p>Estado civil:</p>
+            <input list="estado civil" name="lista" />
+            <datalist id="estado civil"><br>
+                <option label="Soltero" value="Soltero">
+                <option label="Casado" value="Casado">
+                <option label="Divorciado" value="Divorciado">
+            </datalist>
+
+                              
+            <p>Aficiones</p>
+            <input type="checkbox" id="aficion_1" name="aficion_1" value="cine">
+            <label for="aficion_1">Cine</label><br>
+            <input type="checkbox" id="aficion_2" name="aficion_2" value="deportes">
+            <label for="aficion_2">Deporte</label><br>
+            <input type="checkbox" id="af_1" name="aficion_3" value="lectura">
+            <label for="aficion_3">Lectura</label><br>
+            <input type="checkbox" id="af_1" name="aficion_4" value="senderismo">
+            <label for="aficion_4">Senderismo</label><br>
+
+            <p>Comentarios</p>
+            <textarea id="caja_texto" name="comentario" rows="10" cols="30">Escribe aquí tus comentarios</textarea>
+
+
+
+
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset">            
+        </form>
+        
+    </body>
+</html>
